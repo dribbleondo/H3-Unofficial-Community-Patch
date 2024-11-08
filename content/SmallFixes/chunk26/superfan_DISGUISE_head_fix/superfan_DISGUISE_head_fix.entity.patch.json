@@ -1,0 +1,48 @@
+{
+	"tempHash": "00EE76DD36E8A60D",
+	"tbluHash": "00286C0D13F5AD31",
+	"patch": [
+		{ "RemoveEntityByID": "b09d4479e2ab53c5" },
+		{
+			"SubEntityOperation": [
+				"21ef00458f69fcb6",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aBodyParts",
+						[
+							{ "RemoveItemByValue": "b09d4479e2ab53c5" },
+							{
+								"AddItemAfter": [
+									"a4d2ebb21599dd7d",
+									"cafe47f4f268cf9c"
+								]
+							}
+						]
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"cafe47f4f268cf9c",
+				{
+					"parent": "21ef00458f69fcb6",
+					"name": "Mesh_Head",
+					"factory": "[modules:/zbodypartentity.class].pc_entitytype",
+					"blueprint": "[modules:/zbodypartentity.class].pc_entityblueprint",
+					"properties": {
+						"m_pMeshResource": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "0055A6EB4011FA8D",
+								"flag": "5F"
+							}
+						},
+						"m_IsHiddenInVR": { "type": "bool", "value": true }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
